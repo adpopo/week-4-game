@@ -1,3 +1,25 @@
-h1{
+body{
+	background-image: url("../images/5.jpg");
+	text-align: center;
+	font-size: 14pt;
+	font-weight: 700;
+}
+
+.jumbotron{
+	background-color: #FF4242;
 	color: #fff;
+	padding: 20px;
+}
+
+.aBox{
+	padding: 20px;
+	min-height: 120px;
+	background-color: #D4EE5E;
+	color: #fff;
+	margin: 1px;
+}
+
+.row{
+	max-width: 960px;
+	margin: auto;
 }

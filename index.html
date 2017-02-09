@@ -20,18 +20,20 @@
 	<div class="jumbotron"><h1>Crystal Collector!</h1></div>
 
 	<!-- instructions -->
-	<div class="col-md-8 aBox">
-		<p>You will be given a random number at the start of the game.</p>
-		<p>There are four crystals below. Clicking one will add a specific amount to your score.</p>
-		<p>You win by matching your score to the random number. You lose when you go over the number.</p>
-		<p>The value of each crystal is hidden</p>
-		<p>Each time the game starts, the values of the crystals will change.</p>
+	<div class="row">
+		<div class="col-md-8 aBox">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. Clicking one will add a specific amount to your score.</p>
+			<p>You win by matching your score to the random number. You lose when you go over the number.</p>
+			<p>The value of each crystal is hidden</p>
+			<p>Each time the game starts, the values of the crystals will change.</p>
+		</div>
 	</div>
 
 	<!-- current score to reach and wins/losses -->
 	<div class="row">
-		<div class="col-md-6 aBox" id="theScore">0</div>
-		<div class="col-md-2 aBox">
+		<div class="col-md-5 aBox" id="theScore">0</div>
+		<div class="col-md-3 aBox">
 			<div id="wins">Your Wins: 0</div>
 			<div id="losses">Your Losses: 0</div>
 		</div>
@@ -46,7 +48,9 @@
 	</div>
 
 	<!-- your points -->
-	<div class="col-md-8 aBox">Your Total Score is:</div>
-	<div class="col-md-8 aBox" id="yourPoints">0</div>
+	<div class="row">
+		<div class="col-md-8 aBox"><h2>Your Total Score is:</h2></div>
+		<div class="col-md-8 aBox" id="yourPoints">0</div>
+	</div>
 
 </body>
