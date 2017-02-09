@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Crystal Game!</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+	<script>
+		$(document).ready(function(){
+			game();
+		});
+	</script>
+
+	<div class="jumbotron"><h1>Crystal Collector!</h1></div>
+
+	<!-- instructions -->
+	<div class="col-md-8 aBox">
+		<p>You will be given a random number at the start of the game.</p>
+		<p>There are four crystals below. Clicking one will add a specific amount to your score.</p>
+		<p>You win by matching your score to the random number. You lose when you go over the number.</p>
+		<p>The value of each crystal is hidden</p>
+		<p>Each time the game starts, the values of the crystals will change.</p>
+	</div>
+
+	<!-- current score to reach and wins/losses -->
+	<div class="row">
+		<div class="col-md-6 aBox" id="theScore">0</div>
+		<div class="col-md-2 aBox">
+			<div id="wins">Your Wins: 0</div>
+			<div id="losses">Your Losses: 0</div>
+		</div>
+	</div>
+	
+	<!-- the crystals -->
+	<div class="row">
+		<div class="col-md-2" id="crystal1"><img src="assets/images/1.jpg"></div>
+		<div class="col-md-2" id="crystal2"><img src="assets/images/2.jpg"></div>
+		<div class="col-md-2" id="crystal3"><img src="assets/images/3.jpg"></div>
+		<div class="col-md-2" id="crystal4"><img src="assets/images/4.jpg"></div>
+	</div>
+
+	<!-- your points -->
+	<div class="col-md-8 aBox">Your Total Score is:</div>
+	<div class="col-md-8 aBox" id="yourPoints">0</div>
+
+</body>
